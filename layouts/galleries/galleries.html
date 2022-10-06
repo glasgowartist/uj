@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ range .Pages }}
   <article class="p-5 mb-4 border rounded-lg shadow-lg">
-    <a href="{{ .Permalink }}">
+    <a href="{{ .RelPermalink }}">
       <div class="flex flex-col lg:flex-row">
         {{ $first_id := index .Params.artworks 0 }}
         {{ $artwork := (index (where $.Site.Data.artworks.artworks "id" $first_id) 0) }}
