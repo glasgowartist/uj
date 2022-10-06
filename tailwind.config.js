@@ -7,7 +7,8 @@ module.exports = {
       './layouts/**/*.html',
       './content/**/*.md',
       './content/**/*.html',
-      './content/**/*.js'
+      './content/**/*.js',
+      './_vendor/**/*.html'
     ],
   },
   darkMode: false, // or 'media' or 'class'
