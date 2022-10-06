@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+{{ $img := resources.Get "images/Leinwand1.jpg" }}
+{{ $img_500 := $img.Resize "500x" }}
+{{ $img_800 := $img.Resize "800x q100 CatmullRom"  }}
+<p>
+<img
+  srcset="
+    {{ $img_500.RelPermalink }} 500w,
+    {{ $img_800.RelPermalink }} 800w,
+    {{ $img.RelPermalink }} 1000w
+  "
+  src="{{ $img.RelPermalink }}"
+/></p>
+
+<p class="text-gray-800 ml-2 mt-8">
+Seit 2011 arbeite ich in Kollaboration mit Jacqueline Baum unter dem Namen <a class="underline text-gray-700 hover:text-gray-500" href="https://baumjakob.ch">baumjakob</a>.
+</p>
+{{ end }}

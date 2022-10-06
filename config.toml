@@ -1,0 +1,15 @@
+baseURL = 'https://ursulajakob.ch/'
+languageCode = 'en-GB'
+title = 'Ursula Jakob'
+
+[params]
+  description = "The work of the Bern-based artist Ursula Jakob"
+
+[imaging]
+  quality = "75"
+  resampleFilter = "Lanczos"
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  identifier = "home"
+  url = "/"
