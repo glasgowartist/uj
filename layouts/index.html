@@ -2,7 +2,7 @@
 
 {{ $img := resources.Get "images/Leinwand1.jpg" }}
 {{ $img_500 := $img.Resize "500x" }}
-{{ $img_800 := $img.Resize "800x q100 CatmullRom"  }}
+{{ $img_800 := $img.Resize "800x" }}
 <p>
 <img
   srcset="
