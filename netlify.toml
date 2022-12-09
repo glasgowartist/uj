@@ -13,10 +13,10 @@
     for = "/*"
     [headers.values]
         Cache-Control = "public, max-age=86400"
-#        X-Frame-Options = "DENY"
-#        Referrer-Policy = "no-referrer"
-#        X-Content-Type-Options = "nosniff"
-#        Content-Security-Policy = "default-src 'none'; script-src 'sha256-DdKNTFsgKomNYJ7hRmfdYKvg33c7ijF/W2BNN86NSZs='; style-src 'self' https://rsms.me; font-src https://rsms.me; img-src https:; media-src https:;"
+        X-Frame-Options = "DENY"
+        Referrer-Policy = "no-referrer"
+        X-Content-Type-Options = "nosniff"
+        Content-Security-Policy = "default-src 'none'; script-src 'sha256-DdKNTFsgKomNYJ7hRmfdYKvg33c7ijF/W2BNN86NSZs='; style-src 'self' https://rsms.me; font-src https://rsms.me; img-src https:; media-src https:;"
 
 [[headers]]
     for = "/css/*"
