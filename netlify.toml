@@ -1,0 +1,30 @@
+[build]
+    command = "hugo mod vendor && hugo --gc --minify"
+    publish = "public"
+
+[build.environment]
+    HUGO_VERSION = "0.104.3"
+    HUGO_ENVIRONMENT = "production"
+    HUGO_ENABLEGITINFO = "true"
+
+# script-src is the inline code for the menu button
+# If it changes, re-calculate with `echo -n 'the_code();' | openssl -binary | openssl base64
+[[headers]]
+    for = "/*"
+    [headers.values]
+        Cache-Control = "public, max-age=86400"
+#        X-Frame-Options = "DENY"
+#        Referrer-Policy = "no-referrer"
+#        X-Content-Type-Options = "nosniff"
+#        Content-Security-Policy = "default-src 'none'; script-src 'sha256-DdKNTFsgKomNYJ7hRmfdYKvg33c7ijF/W2BNN86NSZs='; style-src 'self' https://rsms.me; font-src https://rsms.me; img-src https:; media-src https:;"
+
+[[headers]]
+    for = "/css/*"
+    [headers.values]
+        Cache-Control = "public, max-age=2419200"
+
+[[headers]]
+    for = "/images/*"
+    [headers.values]
+        Cache-Control = "public, max-age=2419200"
+
