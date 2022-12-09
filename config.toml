@@ -1,6 +1,9 @@
 languageCode = 'en-GB'
 title = 'Ursula Jakob'
 
+# Disable categories and tags
+disableKinds = ["taxonomy", "term", "RSS"]
+
 [params]
   description = "The work of the Bern-based artist Ursula Jakob"
 
