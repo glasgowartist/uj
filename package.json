@@ -1,15 +1,22 @@
 {
-  "name": "uj-hugo",
-  "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {
+      "autoprefixer": "github.com/glasgowartist/ga-hugo",
+      "postcss": "github.com/glasgowartist/ga-hugo",
+      "postcss-cli": "github.com/glasgowartist/ga-hugo",
+      "postcss-import": "github.com/glasgowartist/ga-hugo",
+      "tailwindcss": "github.com/glasgowartist/ga-hugo"
+    }
   },
-  "author": "",
-  "dependencies": {
-    "autoprefixer": "^10.2.4",
-    "postcss": "^8.2.6",
-    "postcss-cli": "^8.3.1",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
     "postcss-import": "^14.0.1",
-    "tailwindcss": "^2.0.3"
-  }
+    "tailwindcss": "^3.3.3"
+  },
+  "name": "uj",
+  "version": "0.1.0"
 }
